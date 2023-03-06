@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkleonardo=self.webpackChunkleonardo||[]).push([[839],{3622:a=>{a.exports=JSON.parse('{"label":"hola","permalink":"/switch-setup-doc/blog/tags/hola","allTagsPath":"/switch-setup-doc/blog/tags","count":1}')}}]);
