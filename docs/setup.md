@@ -11,7 +11,7 @@ sidebar_position: 1
 以下のツイートのリンクをブラウザで開き、zipファイルをダウンロードして [展開](https://support.microsoft.com/ja-jp/windows/8d28fa72-f2f9-712f-67df-f80cf89fd4e5#ID0ED-button) します。<br />
 https://twitter.com/Rokkoku_I/status/1505534135670288385 [^1]
 
-[^1]: 本スクリプトは、「[ろっこく]("https://twitter.com/Rokkoku_I/")」さんが作成された、「Python環境構築からPokeControllerの導入、実行を代行してくれるbatファイル(v05)」です。
+[^1]: 本スクリプトは、「[ろっこく](https://twitter.com/Rokkoku_I/)」さんが作成された、「Python環境構築からPokeControllerの導入、実行を代行してくれるbatファイル(v05)」です。
 
 ### 1-2. Poke-Controller Modified インストールスクリプトの実行
 
