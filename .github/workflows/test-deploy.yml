@@ -16,9 +16,12 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 18
-          cache: yarn
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 6.0.2
+          run_install: |
+            - recursive: true
+              args: [--frozen-lockfile, --strict-peer-dependencies]
 
-      - name: Install dependencies
-        run: yarn install --frozen-lockfile
-      - name: Test build website
-        run: yarn build
+      - name: Test Build website
+        run: pnpm build
