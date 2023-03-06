@@ -41,7 +41,7 @@ GND-GND, TXD-RX←0 を接続し、以下の写真のようにしてください
 [^3]:大きいほうの基板
 [^4]: ジャンパケーブルは、1本ずつちぎってご利用ください。予備をたくさん入れていますが、必要なのは2本だけです。
 
-<img src="/img/jumper-cable-connection.webp" alt="example of jumper cable connections" width="50%" />
+<img src="{require('static/img/jumper-cable-connection.webp')" alt="example of jumper cable connections" width="50%" />
 
 2. 「USB-シリアル変換モジュール」とPCを、Type-Cケーブルで接続します。
 3. 「Arduino Leonardo」と「ニンテンドーSwitchに接続したDock」を、Micro USBケーブルで接続します。
@@ -53,7 +53,7 @@ GND-GND, TXD-RX←0 を接続し、以下の写真のようにしてください
 
 ここまで完了すると、以下の図のような配線となります。
 
-<img src="/img/all-connections.webp" alt="example of all connections" width="50%" />
+<img src="{require('/img/all-connections.webp')" alt="example of all connections" width="50%" />
 
 ## 3. 利用したい自動化プログラムの追加
 
