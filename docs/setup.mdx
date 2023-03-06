@@ -2,6 +2,9 @@
 sidebar_position: 1
 ---
 
+import JumperImage from '@site/static/img/jumper-cable-connection.webp';
+import AllImage from '@site/static/img/all-connections.webp';
+
 # 使い方説明
 
 ## 1. Poke-Controller Modifiedの導入
@@ -41,7 +44,7 @@ GND-GND, TXD-RX←0 を接続し、以下の写真のようにしてください
 [^3]:大きいほうの基板
 [^4]: ジャンパケーブルは、1本ずつちぎってご利用ください。予備をたくさん入れていますが、必要なのは2本だけです。
 
-![example of jumper cable connections](/img/jumper-cable-connection.webp)
+<img src={JumperImage} alt="example of jumper cable connections" width="50%" />
 
 2. 「USB-シリアル変換モジュール」とPCを、Type-Cケーブルで接続します。
 3. 「Arduino Leonardo」と「ニンテンドーSwitchに接続したDock」を、Micro USBケーブルで接続します。
@@ -53,7 +56,7 @@ GND-GND, TXD-RX←0 を接続し、以下の写真のようにしてください
 
 ここまで完了すると、以下の図のような配線となります。
 
-![example of all connections](/img/all-connections.webp)
+<img src={AllImage} alt="example of all connections" width="50%" />
 
 ## 3. 利用したい自動化プログラムの追加
 
