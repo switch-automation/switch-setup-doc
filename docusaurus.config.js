@@ -93,7 +93,7 @@ const config = {
             title: "Docs",
             items: [
               {
-                label: "Tutorial",
+                label: "セットアップ手順",
                 to: "/docs/setup",
               },
             ],
