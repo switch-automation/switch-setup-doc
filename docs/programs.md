@@ -28,4 +28,11 @@ https://drive.google.com/drive/folders/1--_D6bJPNEzaWG39uEIJp-p5GdRG8ibK
 
 https://drive.google.com/drive/folders/1NNhMjJ4aig21wgRfm6vJnfvamVx6ZkOW
 
+## その他
+ふーさん（Twitter: [@Fooooooo628](https://twitter.com/Fooooooo628) ）はその他にも、[色々なプロフラムを公開](https://drive.google.com/drive/folders/1EVieDCnxpkClyGKOCvwGZj7sct2hPZQF)してくださっています。
 
+[A0準伝説厳選](https://drive.google.com/drive/folders/1A00o021UH3CRv2yEJPOhMmPxkwbCg79X)
+[S0ディンルー厳選](https://drive.google.com/drive/folders/1vR_vqXTRyYmd6-Qn7ZqvzWobMLZP2oHU)
+[A0無補正コレクレー厳選](https://drive.google.com/drive/folders/1Ru33dtm71bJmTrVS03KadUrRWxa_u7VF)
+[自動ボックス逃し](https://drive.google.com/drive/folders/11e73JYR16rKS4eLQKz1qcIq454vw7bLZ)
+[ふしぎなおくりもの自動受取](https://drive.google.com/drive/folders/13gJ0gzB1nrLAEMZT3ble8IDfiYF8Rw6Y)
