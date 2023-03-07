@@ -66,9 +66,9 @@ const config = {
       // Replace with your project's social card
       image: "img/docusaurus-social-card.jpg",
       navbar: {
-        title: "My Site",
+        title: "Switch自動化 セットアップ手順",
         logo: {
-          alt: "My Site Logo",
+          alt: "Switch自動化 セットアップ手順のロゴ",
           src: "img/logo.webp",
         },
         items: [
@@ -76,7 +76,7 @@ const config = {
             type: "doc",
             docId: "setup",
             position: "left",
-            label: "Tutorial",
+            label: "セットアップ手順",
           },
           // { to: "/blog", label: "Blog", position: "left" },
           // {
