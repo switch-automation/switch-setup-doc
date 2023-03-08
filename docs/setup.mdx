@@ -5,6 +5,8 @@ import InstallationDoneScreenshot from '@site/static/img/1-installationDone.png'
 import CloneDoneScreenshot from '@site/static/img/2-CloneDone.png';
 import JumperImage from '@site/static/img/jumper-cable-connection.webp';
 import AllImage from '@site/static/img/all-connections.webp';
+import DeviceManagerImage from '@site/static/img/device-manager.png';
+import SetSerialPortImage from '@site/static/img/set-serial-port.png';
 
 # 使い方説明
 
@@ -34,14 +36,14 @@ import AllImage from '@site/static/img/all-connections.webp';
 
 https://twitter.com/Rokkoku_I/status/1505534135670288385 [^2]
 
-[^2]: 本スクリプトは、「[ろっこく](https://twitter.com/Rokkoku_I/)」さんが作成された、「Python環境構築からPokeControllerの導入、実行を代行してくれるbatファイル(v05)」です。
+[^2]: 本スクリプトは、「[ろっこく](https://twitter.com/Rokkoku_I/)」さんが作成された、「Python環境構築からPoke-Controllerの導入、実行を代行してくれるbatファイル(v05)」です。
 
 ### 1-2. Poke-Controller Modified インストールスクリプトの実行
 
 
-次に、ダウンロードしたファイルを [展開](https://support.microsoft.com/ja-jp/windows/8d28fa72-f2f9-712f-67df-f80cf89fd4e5#ID0ED-button) します。<br />
+次に、ダウンロードしたzipファイルを [展開](https://support.microsoft.com/ja-jp/windows/8d28fa72-f2f9-712f-67df-f80cf89fd4e5#ID0ED-button) します。<br />
 
-展開したら、作成されたフォルダを開き、BatsForPokecon_v05 > PokeController 内の3つのバッチファイル
+展開したら、作成されたフォルダを開き、`BatsForPokecon_v05` > `PokeController` 内の3つのバッチファイル
 
 - 1_PokeConEnv.bat
 - 2-2_ClonePokeConModified.bat
@@ -58,7 +60,7 @@ https://twitter.com/Rokkoku_I/status/1505534135670288385 [^2]
 
 <img src={CloneDoneScreenshot} alt="clone done screenshot" width="50%" />
 
-`3-2_ExecutePokeConModified.bat`で、Poke Controller Modifiedが起動します。
+`3-2_ExecutePokeConModified.bat`で、Poke-Controller Modifiedが起動します。
 
 ## 2. 機器の接続
 
@@ -91,8 +93,8 @@ GND-GND, TXD-RX←0 を接続し、以下の写真のようにしてください
 
 ## 3. 利用したい自動化プログラムの追加
 
-PokeController ModifiedのPythonCommandsフォルダや、その2つ上の階層のTemplatesフォルダにファイルを配置します。<br />
-（PythonCommandsフォルダは、PokeController Modifiedを起動して、画面右下のコマンド選択欄のフォルダアイコンをクリックすると開けます）
+Poke-Controller ModifiedのPythonCommandsフォルダや、その2つ上の階層のTemplatesフォルダにファイルを配置します。<br />
+（PythonCommandsフォルダは、Poke-Controller Modifiedを起動して、画面右下のコマンド選択欄のフォルダアイコンをクリックすると開けます）
 
 詳しくは、利用したい自動化プログラムに付属の説明をご覧ください。
 
@@ -101,12 +103,14 @@ PokeController ModifiedのPythonCommandsフォルダや、その2つ上の階層
 
 ## 4. Poke-Controller Modifiedの起動と実行
 
-1. 既にPoke Controller Modifiedが開いている場合は、一旦閉じます。
-2. `3-2_ExecutePokeConModified.bat` を実行し、Poke Controller Modifiedを起動します。
+1. 既にPoke-Controller Modifiedが開いている場合は、一旦閉じます。
+2. `3-2_ExecutePokeConModified.bat` を実行し、Poke-Controller Modifiedを起動します。
 3. 画面上部の映像キャプチャデバイスの選択欄から、「USB Video」を選択し、「Reload Camera」をクリックします。
 4. 「デバイスマネージャー」を開き（[開き方](https://askpc.panasonic.co.jp/beginner/guide/ten07/7013.html)）、「ポート（COMとLPT）」から「USB-SERIAL CH340」と書いてあるものを探してポート番号を見つけます。<br />
-   例えば、「USB-SERIAL CH340（COM5）」と書いてある場合、ポート番号は「5」です。<br />
-   そして、見つけたポート番号をPokeController Modifiedの画面左下のポート設定欄に設定し、「Reload Port」ボタンを押してください。[^8]
+    例えば、「USB-SERIAL CH340（COM5）」と書いてある場合、ポート番号は「5」です。<br />
+    そして、見つけたポート番号をPoke-Controller Modifiedの画面左下のポート設定欄に設定し、「Reload Port」ボタンをクリックしてください。[^8]
+    <img src={DeviceManagerImage} alt="device manager" style={{height: "200px"}} />
+    <img src={SetSerialPortImage} alt="set serial port in poke-controller modified" style={{height: "200px"}} />
 5. 画面右下のコマンド選択欄から使用したいコマンドを選択し、Startボタンをクリックします。
 
 [^8]:見つからない場合は、デバイスマネージャーで右クリックし、「ハードウェア変更のスキャン」をクリックしてください。
