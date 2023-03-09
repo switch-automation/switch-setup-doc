@@ -10,6 +10,12 @@
 
 https://note.com/mafuro/n/na15bca87f5ce
 
+なお、動作に必要なパッケージは、以下のコマンドで導入できます。
+
+```cmd
+py -3.7 -m pip install ImageHash Pandas
+```
+
 ## 自動タマゴ受け取り・孵化
 作者：ふーさん（Twitter: [@Fooooooo628](https://twitter.com/Fooooooo628) ）
 
