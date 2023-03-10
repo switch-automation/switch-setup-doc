@@ -34,7 +34,12 @@ py -3.7 -m pip install ImageHash Pandas
   <summary>操作がずれる場合</summary>
   <div>
     <p>
-Switchには個体差があります。操作時間を調整して対応しましょう。
+Switchには個体差があります。操作時間を調整して対応しましょう。<br />
+    </p>
+      <p>
+        なお、self.pressメソッドの使い方は、<br />
+        self.press(<code>ボタン名</code>, <code>押し続ける時間</code>, <code>離した後の待機時間</code>)<br />
+        です。
 </p>
     <details>
       <summary>
@@ -44,29 +49,29 @@ Switchには個体差があります。操作時間を調整して対応しま�
 116行目（`#バナナ1枚目`と書いてある行）付近から始まる具材を乗せる処理の時間を変更しましょう。<br />
 私の場合は、バナナをつかむ際に通り過ぎてしまったので、以下のように「上ボタンと下ボタンを押す時間を、0.1秒程度ずつ減らす」とうまくいきました。
       </p>
-<CodeBlock language="python">
-        self.press(Direction.UP,0.55,0.5) #バナナ1枚目 0.65 → 0.55<br />
-        self.hold(Button.A,0.5)<br />
-        self.press(Direction.DOWN,0.53,0.5) # 0.6 → 0.53<br />
-        self.holdEnd(Button.A)<br />
-        self.press(Direction.UP,0.53,0.5) #バナナ2枚目 0.63 → 0.53<br />
-        self.hold(Button.A,0.5)<br />
-        self.press(Direction.DOWN,0.53,0.5) # 0.63 → 0.53<br />
-        self.holdEnd(Button.A)<br />
-        self.press(Direction.UP,0.54,0.5) #バナナ3枚目 0.64 → 0.54<br />
-        self.hold(Button.A,0.5)<br />
-        self.press(Direction.DOWN,0.52,0.5) # 0.6 → 0.52<br />
-        self.press(Direction.LEFT,0.2,0.5)<br />
-</CodeBlock>
+        <pre><CodeBlock language="python">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.press(Direction.UP,0.55,0.5) #バナナ1枚目 0.65 → 0.55<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.hold(Button.A,0.5)<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.press(Direction.DOWN,0.53,0.5) # 0.6 → 0.53<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.holdEnd(Button.A)<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.press(Direction.UP,0.53,0.5) #バナナ2枚目 0.63 → 0.53<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.hold(Button.A,0.5)<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.press(Direction.DOWN,0.53,0.5) # 0.63 → 0.53<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.holdEnd(Button.A)<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.press(Direction.UP,0.54,0.5) #バナナ3枚目 0.64 → 0.54<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.hold(Button.A,0.5)<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.press(Direction.DOWN,0.52,0.5) # 0.6 → 0.52<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.press(Direction.LEFT,0.2,0.5)<br />
+</CodeBlock></pre>
     </details>
       <details>
           <summary>
               タマゴの籠にたどりつけない場合
           </summary>
           <p>
-              154行目付近の、<code>moveToBasket</code>関数の中のボタン入力時間を変更しましょう。
+              154行目付近の、<code>moveToBasket</code>関数の中のボタン入力時間を変更しましょう。<br />
           </p>
-          <CodeBlock language="python">
+          <pre><CodeBlock language="python">
               &nbsp;&nbsp;&nbsp;&nbsp;def moveToBasket(self):<br />
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.press(Direction.LEFT,0.1,0.5)#卵の籠側まで移動<br />
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.press(Button.L,0.1,0.5)<br />
@@ -80,7 +85,7 @@ Switchには個体差があります。操作時間を調整して対応しま�
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.press(Direction.RIGHT,0.1,0.5)<br />
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.press(Button.L,0.1,0.5)<br />
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.press(Direction.UP,0.1,0.5)<br />
-          </CodeBlock>
+          </CodeBlock></pre>
       </details>
   </div>
 </details>
