@@ -30,6 +30,38 @@ py -3.7 -m pip install ImageHash Pandas
   - リセット法（旧バージョン？）：https://urasaku77.hateblo.jp/entry/2023/01/10/222152
 - ダウンロード：https://drive.google.com/drive/folders/1--_D6bJPNEzaWG39uEIJp-p5GdRG8ibK
 
+<details>
+  <summary>操作がずれる場合</summary>
+  <div>
+    <p>
+Switchには個体差があります。操作時間を調整して対応しましょう。
+</p>
+    <details>
+      <summary>
+        バナナスライスをうまくつかめない場合
+      </summary>
+      <p>
+116行目（`#バナナ1枚目`と書いてある行）付近から始まる具材を乗せる処理の時間を変更しましょう。<br />
+私の手元では、以下のように「上ボタンと下ボタンを押す時間を、0.1秒程度ずつ減らす」とうまくいきました。
+      </p>
+<CodeBlock language="python">
+        self.press(Direction.UP,0.55,0.5) #バナナ1枚目 0.65 → 0.55<br />
+        self.hold(Button.A,0.5)<br />
+        self.press(Direction.DOWN,0.53,0.5) # 0.6 → 0.53<br />
+        self.holdEnd(Button.A)<br />
+        self.press(Direction.UP,0.53,0.5) #バナナ2枚目 0.63 → 0.53<br />
+        self.hold(Button.A,0.5)<br />
+        self.press(Direction.DOWN,0.53,0.5) # 0.63 → 0.53<br />
+        self.holdEnd(Button.A)<br />
+        self.press(Direction.UP,0.54,0.5) #バナナ3枚目 0.64 → 0.54<br />
+        self.hold(Button.A,0.5)<br />
+        self.press(Direction.DOWN,0.52,0.5) # 0.6 → 0.52<br />
+        self.press(Direction.LEFT,0.2,0.5)<br />
+</CodeBlock>
+    </details>
+  </div>
+</details>
+
 ## 競り（マリナードタウン）
 作者：ふーさん（Twitter: [@Fooooooo628](https://twitter.com/Fooooooo628) ）
 
